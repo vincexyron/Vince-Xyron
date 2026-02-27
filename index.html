@@ -68,12 +68,13 @@
         }
 
         .about-video {
-             flex: 0 0 350px; 
+             flex-shrink: 0;
         }
 
         .about-video video {
-            width: 100%;      
-            height: auto;     
+            width: 350px;      
+            height: 200px;    
+            object-fit: cover; 
             border-radius: 12px;
             display: block;
         }
