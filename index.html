@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            background-color: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff4d4d;
+        }
+
+        .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 25px;
+            color: #ff4d4d;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .hero {
+            background: url("images/debut.jfif") center/cover no-repeat;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff4d4d;
+            text-align: center;
+        }
+
+        .hero h1 {
+            background: rgba(0,0,0,0.7);
+            padding: 20px 40px;
+            border-radius: 8px;
+            font-size: 40px;
+        }
+
+        .video-section {
+            height: 50%;
+            width: 50%;
+            margin: 60px auto;
+            text-align: center;
+        }
+
+        .video-section h2 {
+            margin-bottom: 20px;
+            color: #ff4d4d;
+        }
+
+        .video-section video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        }
+
+        .blog-section {
+            width: 85%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .post {
+            background: #222;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+        }
+
+        .post img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0; 
+        }
+
+        .post-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .post-content h3 {
+            margin-top: 0;
+            color: #ff4d4d;
+        }
+
+        footer {
+            background-color: #000;
+            color: #ff4d4d;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            .video-section {
+                width: 90%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo"> Akaxhira
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="photodump.html">Photo Dump</a>
+        <a href="media.html">Media</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Vince Xyron Mallari</h1>
+</section>
+
+<section class="video-section">
+    <h2>About Me</h2>
+    <video controls>
+        <source src="/images/tiktok.MP4" type="video/mp4">
+    </video>
+</section>
+
+<section class="blog-section">
+
+    <a href="biography.html" style="text-decoration: none; color: inherit;">
+        <div class="post">
+            <img src="https://picsum.photos/600/400?random=41" alt="Biography">
+            <div class="post-content">
+                <h3>Biography</h3>
+                <p>Learn more about me, Vince Xyron Mallari</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="blogs.html" style="text-decoration: none; color: inherit;">
+        <div class="post">
+            <img src="https://picsum.photos/600/400?random=42" alt="Blogs">
+            <div class="post-content">
+                <h3>Blogs</h3>
+                <p>Discover the blogs that I have created.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="photodump.html" style="text-decoration: none; color: inherit;">
+        <div class="post">
+            <img src="https://picsum.photos/600/400?random=43" alt="Photodump">
+            <div class="post-content">
+                <h3>Photodump</h3>
+                <p>A collection of pictures throughout my life.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="media.html" style="text-decoration: none; color: inherit;">
+        <div class="post">
+            <img src="https://picsum.photos/600/400?random=44" alt="Media">
+            <div class="post-content">
+                <h3>Media</h3>
+                <p>A collection of my all time favorite music, movies and tvshows.</p>
+            </div>
+        </div>
+    </a>
+
+</section>
+
+<footer>
+    © 2026 Vince Xyron Mallari | Home
+</footer>
+
+</body>
+</html>

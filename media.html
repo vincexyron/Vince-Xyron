@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Page</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #111;
+  color: #fff;
+}
+
+nav {
+  background-color: #000;
+  padding: 15px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: #ff4d4d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+header {
+  background-color: #220000;
+  text-align: center;
+  padding: 60px 20px;
+  color: #ff4d4d;
+}
+
+header h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+section {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.media-link {
+  text-decoration: none;
+}
+
+.media-card {
+  background-color: #222;
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.media-card:hover {
+  background-color: #440000;
+  cursor: pointer;
+}
+
+.media-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+
+.media-card-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.media-card h2 {
+  margin: 0 0 10px 0;
+  color: #ff4d4d;
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.media-card p {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 25px;
+  color: #ff4d4d;
+  font-family: Georgia, serif;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="biography.html">Biography</a>
+  <a href="blogs.html">Blogs</a>
+  <a href="photodump.html">Photo Dump</a>
+  <a href="media.html">Media</a>
+</nav>
+
+<header>
+  <h1>Media Page</h1>
+</header>
+
+<section>
+
+<a href="mybeats.html" class="media-link">
+  <div class="media-card">
+    <img src="images/mybeats.png" alt="My Beats">
+    <div class="media-card-content">
+      <h2>My Beats</h2>
+      <p>
+        A collection of my all time favorite songs.
+      </p>
+    </div>
+  </div>
+</a>
+
+<a href="mymovies.html" class="media-link">
+  <div class="media-card">
+    <img src="images/movies.png" alt="My Film Movies">
+    <div class="media-card-content">
+      <h2>My Film Movies</h2>
+      <p>
+        My favorite movies that I have watched.
+      </p>
+    </div>
+  </div>
+</a>
+
+<a href="mytvshows.html" class="media-link">
+  <div class="media-card">
+    <img src="images/tvshows.png" alt="My Film TV Shows">
+    <div class="media-card-content">
+      <h2>My Film TV Shows</h2>
+      <p>
+        My favorite TV shows that I have watched.
+      </p>
+    </div>
+  </div>
+</a>
+
+</section>
+
+<footer>
+  © 2026 Vince Xyron A Mallari | Media 
+</footer>
+
+</body>
+</html>
