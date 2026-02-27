@@ -7,10 +7,31 @@
 
 <style>
 body {
-  margin: 0;
-  font-family: Georgia, serif;
-  background-color: #111;
-  color: #fff;
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
 }
 
 nav {
@@ -28,23 +49,6 @@ nav a {
 }
 
 nav a:hover {
-  color: #fff;
-}
-
-header {
-  background-color: #220000;
-  text-align: center;
-  padding: 80px 20px;
-  color: #ff4d4d;
-}
-
-header h1 {
-  font-size: 60px;
-  margin: 0 0 20px;
-}
-
-header p {
-  font-size: 24px;
   color: #fff;
 }
 
@@ -95,22 +99,25 @@ footer {
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="blog1.html">Technology Related</a>
-  <a href="blog2.html">Personal Blog</a>
-  <a href="blog3.html">Career and Future</a>
-</nav>
-
 <header>
-  <h1>Hello, I am Vince Xyron A Mallari</h1>
-  <p>A 2nd year IT Student from the University of the East</p>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo"> Akaxhira
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="photodump.html">Photo Dump</a>
+        <a href="media.html">Media</a>
+        <a href="dream.html">Dream Places</a>
+        <a href="bucket.html">Bucket List</a>
+    </nav>
 </header>
 
 <div class="nav-section">
-  <a href="blog1.html" class="card">Technology Related<img src="blog1.jpg"></a>
-  <a href="blog2.html" class="card">Personal Blog<img src="blog2.jpg"></a>
-  <a href="blog3.html" class="card">Career and Future<img src="blog3.jpg"></a>
+  <a href="blog1.html" class="card">Technology Related<img src="images/blog1.jpg"></a>
+  <a href="blog2.html" class="card">Personal Blog<img src="images/blog2.jpeg"></a>
+  <a href="blog3.html" class="card">Career and Future<img src="images/blog3.avif"></a>
 </div>
 
 <footer>

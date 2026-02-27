@@ -13,37 +13,97 @@ body {
   color: #fff;
 }
 
-nav {
-  background-color: #000;
-  padding: 15px 30px;
+header {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4d4d;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  padding: 15px 30px;
+  background-color: #000;
 }
 
 nav a {
   color: #ff4d4d;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.2s;
 }
 
 nav a:hover {
   color: #fff;
 }
 
-header {
-  background-color: #220000;
+.photo-dump-header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px 40px;
+  background: linear-gradient(#220000, #440000);
   color: #ff4d4d;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
-header h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
+.photo-dump-header h1 {
+  font-size: 72px;
+  margin: 0;
   letter-spacing: 2px;
 }
 
+.photo-dump-header p {
+  font-size: 22px;
+  margin-top: 15px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.photo-dump {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.photo-section {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 section {
   max-width: 1100px;
   margin: 50px auto;
@@ -109,18 +169,25 @@ footer {
 </head>
 
 <body>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="biography.html">Biography</a>
-  <a href="blogs.html">Blogs</a>
-  <a href="photodump.html">Photo Dump</a>
-  <a href="media.html">Media</a>
-</nav>
-
 <header>
-  <h1>Media Page</h1>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo"> Akaxhira
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="photodump.html">Photo Dump</a>
+        <a href="media.html">Media</a>
+        <a href="dream.html">Dream Places</a>
+        <a href="bucket.html">Bucket List</a>
+    </nav>
 </header>
+
+<div class="photo-dump-header">
+  <h1>Media</h1>
+  <p>Collection of my all time favorite music, movies and tv shows.</p>
+</div>
 
 <section>
 
